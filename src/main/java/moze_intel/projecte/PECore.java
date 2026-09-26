@@ -34,7 +34,6 @@ import moze_intel.projecte.emc.EMCMapper;
 import moze_intel.projecte.events.PlayerEvents;
 import moze_intel.projecte.gameObjs.ObjHandler;
 import moze_intel.projecte.impl.IMCHandler;
-import moze_intel.projecte.integration.Integration;
 import moze_intel.projecte.network.PacketHandler;
 import moze_intel.projecte.network.ThreadCheckUUID;
 import moze_intel.projecte.network.ThreadCheckUpdate;
@@ -106,7 +105,6 @@ public class PECore {
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
         NBTWhitelistParser.readUserData();
-        Integration.init();
     }
 
     @Mod.EventHandler
