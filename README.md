@@ -1,5 +1,5 @@
 #About this fork
-This repository is a trimmed version of ProjectE() that only EMC System is remained for my modpack or mods.
+This repository is a trimmed version of ProjectE(https://github.com/sinkillerj/ProjectE) that only EMC System is remained for my modpack or mods.
 All contents from the original repository, their copyright belongs to the original author and is under the original license(MIT License).
 Any new content in this repository is copyright of LunaGlaxe7,  unless otherwise stated.
 
