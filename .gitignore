@@ -83,6 +83,7 @@ local.properties
 
 eclipse/
 out/
+run/
 main/java/appeng/
 main/java/invtweaks/
 main/java/ic2/
