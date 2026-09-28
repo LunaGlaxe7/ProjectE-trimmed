@@ -15,7 +15,6 @@ import moze_intel.projecte.gameObjs.blocks.AlchemicalChest;
 import moze_intel.projecte.gameObjs.blocks.TransmutationStone;
 import moze_intel.projecte.gameObjs.customRecipes.RecipeAlchemyBag;
 import moze_intel.projecte.gameObjs.items.AlchemicalBag;
-import moze_intel.projecte.gameObjs.items.CovalenceDust;
 import moze_intel.projecte.gameObjs.items.PhilosophersStone;
 import moze_intel.projecte.gameObjs.items.Tome;
 import moze_intel.projecte.gameObjs.items.TransmutationTablet;
@@ -31,7 +30,6 @@ public class ObjHandler {
     public static Block transmuteStone = new TransmutationStone();
     public static Item philosStone = new PhilosophersStone();
     public static Item alchBag = new AlchemicalBag();
-    public static Item covalence = new CovalenceDust();
 
     public static Item tome = new Tome();
 
@@ -95,11 +93,11 @@ public class ObjHandler {
                 'D',
                 diamondReplacement,
                 'L',
-                new ItemStack(covalence, 1, 0),
+                new ItemStack(Items.gold_ingot, 1),
                 'M',
-                new ItemStack(covalence, 1, 1),
+                new ItemStack(Items.diamond, 1),
                 'H',
-                new ItemStack(covalence, 1, 2),
+                new ItemStack(Items.emerald, 1),
                 'S',
                 Blocks.stone,
                 'I',
@@ -115,7 +113,7 @@ public class ObjHandler {
                     "WAW",
                     "WWW",
                     'C',
-                    new ItemStack(covalence, 1, 2),
+                    new ItemStack(Items.gold_ingot, 1),
                     'A',
                     alchChest,
                     'W',
@@ -171,21 +169,6 @@ public class ObjHandler {
         GameRegistry.addShapelessRecipe(new ItemStack(Items.gold_ingot, 4), philosStone, Items.diamond);
         GameRegistry.addShapelessRecipe(new ItemStack(Items.emerald), philosStone, Items.diamond, Items.diamond);
         GameRegistry.addShapelessRecipe(new ItemStack(Items.diamond, 2), philosStone, Items.emerald);
-
-        // Covalence dust
-        GameRegistry.addShapelessRecipe(
-                new ItemStack(covalence, 40, 0),
-                Blocks.cobblestone,
-                Blocks.cobblestone,
-                Blocks.cobblestone,
-                Blocks.cobblestone,
-                Blocks.cobblestone,
-                Blocks.cobblestone,
-                Blocks.cobblestone,
-                Blocks.cobblestone,
-                new ItemStack(Items.coal, 1, 1));
-        GameRegistry.addShapelessRecipe(new ItemStack(covalence, 40, 1), Items.iron_ingot, Items.redstone);
-        GameRegistry.addShapelessRecipe(new ItemStack(covalence, 40, 2), Items.diamond, Items.coal);
 
         // Custom Recipe managment
         for (int i = 1; i <= 15; i++) {
